@@ -53,6 +53,7 @@ fn main() {
     let tau = attack(P, tau_P, tau_d1_P, Q, tau_d2_Q);
 
     assert_eq!(true, verify(P, tau_P, tau));
+    println!("Puzzle solved! ✅ The value of tau is {}", tau);
 }
 
 const PUZZLE_DESCRIPTION: &str = r"
